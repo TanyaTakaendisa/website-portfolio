@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5264);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin: 10px 0 30px;
+    color: #d1d5db;
+}
+
+/* ===============================
+   BUTTONS
+   =============================== */
+
+.button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.button.primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #2563eb;
+}
+
+.button.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.button.secondary:hover {
+    background-color: white;
+    color: #1f2933;
+}
+
+/* ===============================
+   CONTENT
+   =============================== */
+
+.content {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.05rem;
+    color: #374151;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* ===============================
+   PORTFOLIO PAGE STYLES
+   =============================== */
+
+.page-header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5264);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #d1d5db;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.page-header .button {
+    display: inline-block;
+}
+
+/* PDF CONTAINER */
+
+.portfolio-pdf {
+    margin-top: 40px;
+}
+
+.portfolio-pdf iframe {
+    width: 100%;
+    height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* PDF FALLBACK */
+
+.pdf-fallback {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.pdf-fallback a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pdf-fallback a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-pdf iframe {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-pdf iframe {
+        height: 60vh;
+    }
+}
